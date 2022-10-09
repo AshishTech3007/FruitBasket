@@ -1,0 +1,268 @@
+.nav-menu {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: auto 16px;
+}
+
+.nav-menu .menu {
+    position: relative;
+    background-color: transparent;
+}
+
+.hamurgermenuclass .nav-menu .hamburger {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.hamurgermenuclass .nav-menu .hamburger:after,
+.hamurgermenuclass .nav-menu .hamburger:before {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.hamurgermenuclass .nav-menu .hamburger:before {
+    top: -10px;
+}
+
+.hamurgermenuclass .nav-menu .hamburger:after {
+    bottom: -10px;
+}
+
+.hamurgermenuclass .nav-menu input {
+    display: none;
+}
+
+.hamurgermenuclass .nav-menu input.active+.menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hamurgermenuclass .nav-menu input.active+.menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.hamurgermenuclass .nav-menu input.active+.menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.hamurgermenuclass .nav-menu input:checked+.menu+.content-agenda {
+    opacity: 1;
+}
+
+.hamurgermenuclass .nav-menu .content-agenda {
+    z-index: 99999;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 90vh;
+    right: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: .25s 0s ease-in-out;
+    transition: .25s 0s ease-in-out;
+}
+
+.hamurgermenuclass .nav-menu .content-agenda {
+    margin-bottom: 1em;
+    display: block;
+    color: #f38630;
+    text-decoration: none;
+}
+
+.hamurgermenuclass.checkoutcls {
+    box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #000;
+    border-radius: 0;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background: #000;
+}
+
+.hamurgermenuclass {
+    position: fixed;
+    right: -45px;
+    top: 0px;
+    z-index: 99999999;
+    width: 100px;
+    height: 55px;
+    background: transparent;
+    /* border-radius: 0% 0% 0% 50%; */
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #000;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.innerclasshamburger {
+    position: fixed;
+    right: -70px;
+    width: 152px;
+    height: 55px;
+    top: 25px;
+}
+
+.margin-tp-2 {
+    margin-top: 2%;
+}
+
+.mainTitleH1style:after {
+    display: block;
+    content: " ";
+    background: url("../images/heading_before_icon.png");
+    position: absolute;
+    left: -5%;
+    top: 15%;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 40px;
+    background-size: 66%;
+    border: none;
+    margin: 0;
+}
+
+.mainTitleH1 {
+    font-family: GraphikSemiBold;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    margin: 0px 0px 20px 0;
+    font-weight: normal;
+    color: #FFFFFF;
+    position: relative;
+    left: 7%;
+}
+
+.content-agenda h1 {
+    color: #fff;
+    font-family: boldtxt;
+    font-size: 3.8em;
+    text-align: center;
+}
+.agendaparentcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+.agendaparentcont1{
+    width: 40%;
+}
+.agendaparentcont2{
+    width: 30%;
+}
+.agendaparentcont3{
+    width: 30%;
+}
+.navigation-card-container {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 60%;
+    height: 70vh;
+    margin: 0 auto;
+    border-radius: 15px;
+    perspective: 1000px;
+    background: #e7524c;
+    overflow: hidden;
+}
+.navigation-list li{
+    font-family: boldtxt;
+    font-size: 2.5em;
+    color: #fff;
+    opacity: 0.6;
+    list-style: none;
+    margin: 10% 0 10% 10%;
+}
+.navigation-list li a,.navigation-list li a:focus,.navigation-list li a:active {
+    color: #fff;
+}
+.navigation-list li.active{
+    opacity: 1;
+}
+sup {
+    top: -1.5em;
+    vertical-align: super;
+    font-size: 0.4em;
+}
+.navigation-list-products li
+{
+    font-family: regulartxt;
+    font-size: 1.5em;
+    color: #fff;
+    opacity: 0.6;
+    list-style: none;
+    margin: 4% 0;
+}
+.navigation-list-products li a,.navigation-list-products li a:focus,.navigation-list-products li a:active{
+    color: #fff;
+}
+.navigation-list-products span{
+    margin-left: 6%;
+}
+.containeritem-fruits img{
+    transition: all 2s ease;
+}
+.inactive img{
+    top: -110%;
+}
+.opacity-full{
+    opacity: 1 !important;
+}
+.opacity-split{
+    opacity: 0.6 !important;
+}
+.singlecontainer{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.singlecontainer2 {
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    margin: 0 auto;
+}
+.singlecontainer3 {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+}
+.bghighlightnw1,.productsbg4{
+    background: #8bd3b9 !important;
+}
+.productsbg1{
+    background: #e7524c;
+}
+.productsbg2{
+    background: #ff7128;
+}
+.productsbg3{
+    background: #fa7692;
+}
